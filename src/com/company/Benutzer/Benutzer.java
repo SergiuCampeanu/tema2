@@ -1,7 +1,5 @@
 package com.company.Benutzer;
-
 import com.company.Sport.Sport;
-
 import java.util.List;
 
 public class Benutzer {
@@ -13,6 +11,33 @@ public class Benutzer {
         this.vorName=vorName;
         this.nachName=nachName;
         this.sport=sport;
+    }
+
+    public double KalkuliereZeit(){
+        double sum = 0;
+        for (Sport x:sport) {
+            sum=sum+x.KalkuliereZeit();
+        }
+        return sum;
+    }
+
+    public double KalkuliereZeit(Sport x){
+        double sum = 0;
+        sum = x.KalkuliereZeit();
+        return sum;
+    }
+
+    public double KalkuliereZeitDurchschnittzeit(){
+        double sum = 0;
+        sum=KalkuliereZeit();
+        if(sport.isEmpty())
+        {
+            return 0;
+        }
+        else
+        {
+            return sum / sport.size();
+        }
     }
 
     public String getVorName() {
@@ -38,12 +63,5 @@ public class Benutzer {
     public void setSport(List<Sport> sport) {
         this.sport = sport;
     }
-
-    public double KalkuliereZeit(){
-        return 65;
-    }
-
-
-
 
 }
