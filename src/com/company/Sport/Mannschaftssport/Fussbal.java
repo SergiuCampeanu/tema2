@@ -6,6 +6,6 @@ public class Fussbal extends Mannschaftssport {
 
     @Override
     public double KalkuliereZeit(){
-        return 55;
+        return 65;
     }
 }

@@ -6,6 +6,7 @@ public class Basketball extends Mannschaftssport {
 
     @Override
     public double KalkuliereZeit(){
-        return 65;
+
+        return 55;
     }
 }
