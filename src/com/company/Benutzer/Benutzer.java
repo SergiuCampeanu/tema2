@@ -2,6 +2,7 @@ package com.company.Benutzer;
 import com.company.Sport.Sport;
 import java.util.List;
 
+
 public class Benutzer {
     private String vorName;
     private String nachName;

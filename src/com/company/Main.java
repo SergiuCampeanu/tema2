@@ -5,7 +5,6 @@ import com.company.Sport.Leichtathletik.Hochsprung;
 import com.company.Sport.Mannschaftssport.Basketball;
 import com.company.Sport.Mannschaftssport.Fussbal;
 import com.company.Sport.Sport;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
