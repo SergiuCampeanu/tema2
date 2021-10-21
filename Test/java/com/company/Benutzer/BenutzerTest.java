@@ -9,7 +9,12 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-
+/**
+ * clasa de teste pentru Benutzer
+ *
+ * @author sncam
+ * @see Benutzer
+ */
 class BenutzerTest {
 
     private Benutzer b1;
@@ -31,9 +36,9 @@ class BenutzerTest {
 
     @org.junit.jupiter.api.Test
     void kalkuliereZeit() { //testam functia de calcul a timpului total pentru fiecare benutzer
-        Assertions.assertEquals(225, b1.KalkuliereZeit());
-        Assertions.assertEquals(240, b2.KalkuliereZeit());
-        Assertions.assertEquals(0, b3.KalkuliereZeit());
+        Assertions.assertEquals(225, b1.kalkuliereZeit());
+        Assertions.assertEquals(240, b2.kalkuliereZeit());
+        Assertions.assertEquals(0, b3.kalkuliereZeit());
 
     }
 
@@ -44,17 +49,17 @@ class BenutzerTest {
         Sport o = new Hindernislauf(); //30
         Sport h = new Hochsprung();  //20
 
-        Assertions.assertEquals(65, b1.KalkuliereZeit(f));
-        Assertions.assertEquals(55, b1.KalkuliereZeit(b));
-        Assertions.assertEquals(30, b1.KalkuliereZeit(o));
-        Assertions.assertEquals(20, b1.KalkuliereZeit(h));
+        Assertions.assertEquals(65, b1.kalkuliereZeit(f));
+        Assertions.assertEquals(55, b1.kalkuliereZeit(b));
+        Assertions.assertEquals(30, b1.kalkuliereZeit(o));
+        Assertions.assertEquals(20, b1.kalkuliereZeit(h));
     }
 
     @org.junit.jupiter.api.Test
     void kalkuliereZeitDurchschnittzeit() {  //testam timpul mediu
-        Assertions.assertEquals(45, b1.KalkuliereZeitDurchschnittzeit()); // 225/5=45
-        Assertions.assertEquals(60, b2.KalkuliereZeitDurchschnittzeit()); // 240/4 = 60
-        Assertions.assertEquals(0, b3.KalkuliereZeitDurchschnittzeit());  // list.of este gol deci 0
+        Assertions.assertEquals(45, b1.kalkuliereZeitDurchschnittzeit()); // 225/5=45
+        Assertions.assertEquals(60, b2.kalkuliereZeitDurchschnittzeit()); // 240/4 = 60
+        Assertions.assertEquals(0, b3.kalkuliereZeitDurchschnittzeit());  // list.of este gol deci 0
 
     }
 

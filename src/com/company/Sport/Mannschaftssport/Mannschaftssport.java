@@ -1,8 +1,19 @@
 package com.company.Sport.Mannschaftssport;
 import com.company.Sport.Sport;
 
+/**
+ * clasa Mannschaftssport este abstracta deoarece nu este instantiata
+ *
+ * @author sncam
+ * @see Sport
+ */
 abstract class  Mannschaftssport implements Sport {
 
+    /**
+     * Metoda de kalkuliereZeit
+     *
+     * @return
+     */
     @Override
-    public abstract double KalkuliereZeit(); //doar declaram metoda astract deoarece nu are implementare
+    public abstract double kalkuliereZeit(); //doar declaram metoda astract deoarece nu are implementare
 }

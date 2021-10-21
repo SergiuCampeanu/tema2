@@ -7,6 +7,11 @@ import com.company.Sport.Mannschaftssport.Fussbal;
 import com.company.Sport.Sport;
 import java.util.List;
 
+/**
+ * main class
+ *
+ * @author sncam
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -21,14 +26,14 @@ public class Main {
         Benutzer b2 = new Benutzer("Sergiu", "Campeanu", List.of());
 
         //afisam rezultatele
-        System.out.println(football.KalkuliereZeit());
-        System.out.println(basketball.KalkuliereZeit());
-        System.out.println(highjJump.KalkuliereZeit());
-        System.out.println(obstacleRace.KalkuliereZeit());
-        System.out.println(football.KalkuliereZeit());
-        System.out.println(b1.KalkuliereZeit());
-        System.out.println(b1.KalkuliereZeitDurchschnittzeit());
-        System.out.println(b2.KalkuliereZeitDurchschnittzeit());
+        System.out.println(football.kalkuliereZeit());
+        System.out.println(basketball.kalkuliereZeit());
+        System.out.println(highjJump.kalkuliereZeit());
+        System.out.println(obstacleRace.kalkuliereZeit());
+        System.out.println(football.kalkuliereZeit());
+        System.out.println(b1.kalkuliereZeit());
+        System.out.println(b1.kalkuliereZeitDurchschnittzeit());
+        System.out.println(b2.kalkuliereZeitDurchschnittzeit());
 
     }
 }

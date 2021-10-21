@@ -1,9 +1,20 @@
 package com.company.Sport.Mannschaftssport;
 
+/**
+ * clasa de fussbal care retunreaza 65 (min) in metoda kalkuliereZeit
+ *
+ * @author sncam
+ * @see com.company.Sport.Mannschaftssport.Mannschaftssport
+ */
 public class Fussbal extends Mannschaftssport {
 
+    /**
+     * Metoda kalkuliereZeit
+     *
+     * @return
+     */
     @Override
-    public double KalkuliereZeit(){ //cream metoda kalkuliereZeit
+    public double kalkuliereZeit(){ //cream metoda kalkuliereZeit
 
         return 65; //returnam nr de minute
     }
