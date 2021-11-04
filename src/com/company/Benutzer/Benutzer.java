@@ -10,31 +10,31 @@ import java.util.List;
 public class Benutzer {
     private String vorName;
     private String nachName;
-    private List<Sport> sport;
+    private List<Sport> sports;
 
     /**
      * Aceasta este Constructorul
      *
      * @param vorName
      * @param nachName
-     * @param sport
+     * @param sports
      */
-    public Benutzer(String vorName, String nachName, List<Sport> sport){
+    public Benutzer(String vorName, String nachName, List<Sport> sports){
         this.vorName=vorName;
         this.nachName=nachName;
-        this.sport=sport;
+        this.sports=sports;
     }
 
     /**
      * Aceasta metoda calculeaza suma totala a sporturilor  diin lista
      *
-     * @return
+     * @return suma
      */
     public double kalkuliereZeit(){
         double sum = 0;
-        for (Sport x:sport) //un foreach care parcurge toata lista
+        for (Sport sport:sports) //un foreach care parcurge toata lista
         {
-            sum=sum+x.kalkuliereZeit(); //toate sporturile se aduna la sum
+            sum=sum+sport.kalkuliereZeit(); //toate sporturile se aduna la sum
         }
         return sum;  //returnam suma
     }
@@ -42,31 +42,31 @@ public class Benutzer {
     /**
      * Aceasta metoda calculeaza timpul pentru fiecare sport in parte
      *
-     * @param x
-     * @return
+     * @param sport object sport
+     * @return suma
      */
 
-    public double kalkuliereZeit(Sport x){
+    public double kalkuliereZeit(Sport sport){
         double sum = 0;
-        sum = x.kalkuliereZeit(); //suma ia valoarea la fiecare return din fiecare class
+        sum = sport.kalkuliereZeit(); //suma ia valoarea la fiecare return din fiecare class
         return sum;//returnam suma
     }
 
     /**
      * Aceasta metoda calculeaza media aritmetica a sporturilor din lista
      *
-     * @return
+     * @return suma imaprtita la nr de sporturi
      */
     public double kalkuliereZeitDurchschnittzeit(){
         double sum = 0;
         sum=kalkuliereZeit();
-        if(sport.isEmpty()) //verificam daca lista este goala
+        if(sports.isEmpty()) //verificam daca lista este goala
         {
             return 0;  //daca da returnam 0
         }
         else
         {
-            return sum / sport.size(); //returnam suma impartita la size
+            return sum / sports.size(); //returnam suma impartita la size
         }
     }
 
@@ -75,7 +75,7 @@ public class Benutzer {
     /**
      * getter
      *
-     * @return
+     * @return vorname
      */
     public String getVorName() {
         return vorName;
@@ -84,7 +84,7 @@ public class Benutzer {
     /**
      * setter
      *
-     * @param vorName
+     * @param vorName name of the benutzer
      */
     public void setVorName(String vorName) {
         this.vorName = vorName;
@@ -93,7 +93,7 @@ public class Benutzer {
     /**
      * getter
      *
-     * @return
+     * @return nach name
      */
     public String getNachName() {
         return nachName;
@@ -102,7 +102,7 @@ public class Benutzer {
     /**
      * setter
      *
-     * @param nachName
+     * @param nachName of the benutzer
      */
     public void setNachName(String nachName) {
         this.nachName = nachName;
@@ -111,19 +111,19 @@ public class Benutzer {
     /**
      * getter
      *
-     * @return
+     * @return sports
      */
     public List<Sport> getSport() {
-        return sport;
+        return sports;
     }
 
     /**
      * setter
      *
-     * @param sport
+     * @param sport sport of the benutzer
      */
     public void setSport(List<Sport> sport) {
-        this.sport = sport;
+        this.sports = sport;
     }
 
 }

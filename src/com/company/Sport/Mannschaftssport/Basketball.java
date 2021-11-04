@@ -11,7 +11,7 @@ public class Basketball extends Mannschaftssport {
     /**
      * Metoda de kalkuliereZeit
      *
-     * @return
+     * @return 55
      */
     @Override
     public double kalkuliereZeit(){ //cream metoda kalkuliereZeit

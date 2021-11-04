@@ -12,7 +12,6 @@ abstract class  Mannschaftssport implements Sport {
     /**
      * Metoda de kalkuliereZeit
      *
-     * @return
      */
     @Override
     public abstract double kalkuliereZeit(); //doar declaram metoda astract deoarece nu are implementare

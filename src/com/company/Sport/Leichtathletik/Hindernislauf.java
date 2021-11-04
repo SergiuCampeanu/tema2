@@ -11,7 +11,7 @@ public class Hindernislauf extends Leichtathletik {
     /**
      * metoda de kalkuliereZeit
      *
-     * @return
+     * @return 30
      */
     @Override
     public double kalkuliereZeit(){ //cream metoda kalkuliereZeit

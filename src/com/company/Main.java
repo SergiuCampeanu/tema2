@@ -18,7 +18,7 @@ public class Main {
         //cream sporturi
         Sport football = new Fussbal();
         Sport basketball = new Basketball();
-        Sport highjJump = new Hochsprung();
+        Sport highJump = new Hochsprung();
         Sport obstacleRace = new Hindernislauf();
 
         //cream benutzeri
@@ -28,7 +28,7 @@ public class Main {
         //afisam rezultatele
         System.out.println(football.kalkuliereZeit());
         System.out.println(basketball.kalkuliereZeit());
-        System.out.println(highjJump.kalkuliereZeit());
+        System.out.println(highJump.kalkuliereZeit());
         System.out.println(obstacleRace.kalkuliereZeit());
         System.out.println(football.kalkuliereZeit());
         System.out.println(b1.kalkuliereZeit());

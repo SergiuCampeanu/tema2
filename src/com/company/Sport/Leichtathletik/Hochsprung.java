@@ -11,7 +11,7 @@ public class Hochsprung extends Leichtathletik {
     /**
      * Metoda de kalkuliereZeit
      *
-     * @return
+     * @return 20
      */
     @Override
     public double kalkuliereZeit(){ //cream metoda kalkuliereZeit

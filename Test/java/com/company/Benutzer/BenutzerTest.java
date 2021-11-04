@@ -23,13 +23,13 @@ class BenutzerTest {
 
     @org.junit.jupiter.api.BeforeEach  //cu before all imi cere ca create sa fie static sa fie statica
     void create(){
-        Sport f = new Fussbal(); //65
-        Sport b = new Basketball();  //55
-        Sport o = new Hindernislauf(); //30
-        Sport h = new Hochsprung();  //20
+        Sport fussbal = new Fussbal(); //65
+        Sport basketball = new Basketball();  //55
+        Sport hindernislauf = new Hindernislauf(); //30
+        Sport hochsprung = new Hochsprung();  //20
 
-        b1 = new Benutzer("vorName1", "nachName1", List.of(f,b,o,h,b));  //cream benutzeri noi
-        b2 = new Benutzer("vorName2", "nachName2", List.of(f,b,b,f));
+        b1 = new Benutzer("vorName1", "nachName1", List.of(fussbal,basketball,hindernislauf,hochsprung,basketball));  //cream benutzeri noi
+        b2 = new Benutzer("vorName2", "nachName2", List.of(fussbal,basketball,basketball,fussbal));
         b3 = new Benutzer("vorName3", "nachName3", List.of());
 
     }
@@ -44,15 +44,15 @@ class BenutzerTest {
 
     @org.junit.jupiter.api.Test
     void testKalkuliereZeit() { //testam functia de calcul a timpului pentru fiecare sport imparte
-        Sport f = new Fussbal(); //65
-        Sport b = new Basketball();  //55
-        Sport o = new Hindernislauf(); //30
-        Sport h = new Hochsprung();  //20
+        Sport fussbal = new Fussbal(); //65
+        Sport basketball = new Basketball();  //55
+        Sport hindernislauf = new Hindernislauf(); //30
+        Sport hochsprung = new Hochsprung();  //20
 
-        Assertions.assertEquals(65, b1.kalkuliereZeit(f));
-        Assertions.assertEquals(55, b1.kalkuliereZeit(b));
-        Assertions.assertEquals(30, b1.kalkuliereZeit(o));
-        Assertions.assertEquals(20, b1.kalkuliereZeit(h));
+        Assertions.assertEquals(65, b1.kalkuliereZeit(fussbal));
+        Assertions.assertEquals(55, b1.kalkuliereZeit(basketball));
+        Assertions.assertEquals(30, b1.kalkuliereZeit(hindernislauf));
+        Assertions.assertEquals(20, b1.kalkuliereZeit(hochsprung));
     }
 
     @org.junit.jupiter.api.Test

@@ -11,7 +11,6 @@ public interface Sport {
      /**
       * Metoda kalkuliereZeit
       *
-      * @return
       */
      double kalkuliereZeit();  //doar declaram metoda
 }

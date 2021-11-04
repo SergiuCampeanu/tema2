@@ -11,7 +11,7 @@ public class Fussbal extends Mannschaftssport {
     /**
      * Metoda kalkuliereZeit
      *
-     * @return
+     * @return 65
      */
     @Override
     public double kalkuliereZeit(){ //cream metoda kalkuliereZeit
